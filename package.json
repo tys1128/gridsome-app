@@ -1,0 +1,22 @@
+{
+  "name": "gridsome-app",
+  "private": true,
+  "scripts": {
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "build": "gridsome build"
+  },
+  "dependencies": {
+    "@gridsome/source-strapi": "^0.2.0",
+    "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.4",
+    "autoprefixer": "^9.8.6",
+    "gridsome-plugin-tailwindcss": "^4.1.1",
+    "postcss": "^7.0.35",
+    "postcss-import": "^14.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4"
+  }
+}
