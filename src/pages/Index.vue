@@ -14,7 +14,8 @@
         digital design for brands that like to have fun.
       </p>
     </div>
-    <section
+    <g-link
+      :to="`post/` + edge.node.id"
       class="flex flex-col text-center justify-center cursor-pointer"
       v-for="edge in $page.posts.edges"
       :key="edge.node.id"
@@ -33,17 +34,18 @@
           >{{ tag.tag }}</span
         >
       </div>
-    </section>
+    </g-link>
     <div>
       <span class="block text-xs py-4 font-bold">LATEST AND GREATEST</span>
       <div class="flex">
-        <div
+        <g-link
+          :to="`post/` + edge.node.id"
           class="font-semibold border border-separate border-gray-100 p-8 cursor-pointer hover:bg-gray-100 transition-all duration-300"
           v-for="edge in $page.posts.edges"
           :key="edge.node.id"
         >
           {{ edge.node.title }}
-        </div>
+        </g-link>
       </div>
     </div>
   </Layout>
