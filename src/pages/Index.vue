@@ -22,7 +22,7 @@
     >
       <img
         class="transition transform hover:scale-105 hover:shadow-xl"
-        :src="`http://localhost:1337${edge.node.photo.url}`"
+        :src="`${GRIDSOME_API_URL}${edge.node.photo.url}`"
         alt=""
       />
       <div class="mb-14 mt-8">

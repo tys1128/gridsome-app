@@ -24,7 +24,7 @@
       class="leading-normal text-base mb-4"
       v-html="md2Html(post.content)"
     ></div>
-    <img :src="`http://localhost:1337${post.photo.url}`" alt="" />
+    <img :src="`${GRIDSOME_API_URL}${post.photo.url}`" alt="" />
   </Layout>
 </template>
 
